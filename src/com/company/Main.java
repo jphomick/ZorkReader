@@ -14,6 +14,7 @@ public class Main {
                 try {
                     command = read.nextLine();
                     if (!(command.startsWith("check") || command.startsWith("reset")
+                            || command.startsWith("help")
                             || command.startsWith("status") || command.startsWith("move"))) {
                         command = "act_" + command;
                     }
